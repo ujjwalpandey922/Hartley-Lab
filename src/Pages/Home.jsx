@@ -15,8 +15,12 @@ const Home = () => {
     <div className="Home">
       <Navbar />
       <div className="homeContainer">
-        <h1>Hi {userInfo.firstName + " " + userInfo.lastName}</h1>
-        <p>Welcome to your Account....</p>
+        {userInfo ? (
+          <>
+            <h1>Hi {userInfo.firstName + " " + userInfo.lastName}</h1>
+            <p>Welcome to your Account....</p>
+          </>
+        ) : null}
       </div>
       <Footer />
     </div>
