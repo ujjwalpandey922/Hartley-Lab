@@ -1,0 +1,114 @@
+.app__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  width: 100%;
+  background: #f5f5f5;
+}
+
+.app__header-img {
+  width: 194px;
+  height: 90px;
+  background: #d9d9d9;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.app__header-img span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+
+  letter-spacing: 0.02em;
+}
+.app__header-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.app__header-nav_logos {
+  display: flex;
+  flex-direction: row;
+}
+
+.app__header-nav_logos-search {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+.app__header-nav_logos-search p {
+  font-family: "PT Sans";
+
+  font-weight: 400;
+  font-size: 16px;
+
+  letter-spacing: 0.02em;
+}
+
+.app__header-nav_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__header-nav_list ul {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  margin-right: 4rem;
+}
+.app__header-nav_list ul li {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.app__header-nav_list button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 8px;
+  border: none;
+  outline: none;
+  width: 144px;
+  height: 44px;
+
+  /* TWS Red */
+
+  background: #dc3636;
+  border-radius: 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.app__header-nav_list button:hover {
+  color: #dc3636;
+  background-color: rgb(52, 30, 30);
+}
+
+@media (max-width: 800px) {
+  .app__header-nav_list,
+  .app__header-nav_logos {
+    display: none;
+  }
+  .app__header-img {
+    width: 100%;
+  }
+}

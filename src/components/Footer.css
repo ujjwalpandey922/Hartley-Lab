@@ -1,0 +1,174 @@
+.app__footer {
+  width: 100%;
+  padding: 2rem 4rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: #434343;
+}
+.app__footer-content1 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 5rem 0;
+}
+
+.app__footer-content1 span {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  /* or 173% */
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.app__footer-content1 h4 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 28px;
+  /* or 133% */
+
+  letter-spacing: 0.02em;
+
+  /* White */
+
+  color: #ffffff;
+}
+.app__footer-content1 p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 32px;
+  /* or 229% */
+
+  letter-spacing: 0.04em;
+
+  color: #f39b4e;
+}
+.app__footer-content1 h5 {
+  margin-top: 2rem;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+.app__footer-content1 h3 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 32px;
+  /* or 229% */
+
+  letter-spacing: 0.04em;
+
+  color: white;
+}
+.app__footer-content1-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =============================second container===================== */
+
+.app__footer-content2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.app__footer-content2 span {
+  width: max-content;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 28px;
+  /* or 133% */
+
+  letter-spacing: 0.02em;
+
+  /* White */
+
+  color: #ffffff;
+}
+
+.app__footer-content2-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  background: white;
+  border-radius: 28px;
+}
+.app__footer-content2-button h6 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+
+  margin-left: 1rem;
+  color: #787579;
+}
+.app__footer-content2-button button {
+  border: none;
+  outline: none;
+
+  background: #f39b4e;
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 0.15rem;
+}
+
+/* =======================icons================================== */
+.app__footer-content2-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5rem 0 2rem 0;
+}
+
+.app__footer-content2-icons- {
+  width: 30px;
+  height: 50px;
+  color: #f39b4e;
+}
+.app__footer-content2 p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .app__footer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .app__footer-content2 {
+    display: none;
+  }
+}
