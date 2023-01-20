@@ -1,8 +1,5 @@
 import "./login.css";
-import { useEffect, useState } from "react";
-// import useAuthContext from "../../hooks/useAuthContext";
-import axios from "axios";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useFormik } from "formik";
@@ -32,62 +29,7 @@ const Login = () => {
         }
       },
     });
-  console.log("====================================");
-  console.log(users);
-  console.log("====================================");
-  // const [credentials, setCredentials] = useState({
-  //   email: "",
-  //   password: "",
-  // });
-  //   const { user, loading, error, dispatch } = useAuthContext();
 
-  //   const response = useLocation();
-  //   useEffect(() => {
-  //     if (response.state !== null) {
-  //       toast.success(response.state.message, {
-  //         position: "top-right",
-  //         autoClose: 2000,
-  //         hideProgressBar: false,
-  //         closeOnClick: true,
-  //       });
-  //     }
-  //   }, [response.state]);
-
-  //   const handleChange = (e) => {
-  //     setCredentials((pre) => ({ ...pre, [e.target.name]: e.target.value }));
-  //   };
-  //   const handleLogin = async () => {
-  //     dispatch({ type: "LOGIN_START" });
-  //     let count = 0;
-  //     for (let key in credentials) {
-  //       if (credentials[key] === "") {
-  //         count = count + 1;
-  //       }
-  //       console.log(count, key, credentials[key]);
-  //     }
-  //     try {
-  //       if (count === 0) {
-  //         const res = await axios.post("/api/auth/login", credentials, {
-  //           withCredentials: true,
-  //         });
-  //         dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
-  //         navTo("/");
-  //       } else {
-  //         toast.error("Enter all Fields First", {
-  //           position: "top-right",
-  //           autoClose: 2000,
-  //         });
-  //       }
-  //     } catch (err) {
-  //       toast.error(err.response.data.message, {
-  //         position: "top-right",
-  //         autoClose: 2000,
-  //         hideProgressBar: false,
-  //         closeOnClick: true,
-  //       });
-  //       dispatch({ type: "LOGIN_ERROR", payload: err.response.data });
-  //     }
-  //   };
   return (
     <div className="login">
       <form

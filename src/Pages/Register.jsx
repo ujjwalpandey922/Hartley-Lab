@@ -1,10 +1,6 @@
 import "./register.css";
-// import useAuthContext from "../../hooks/useAuthContext";
-import axios from "axios";
 import { Link,  useNavigate } from "react-router-dom";
-import { useState } from "react";
 import { userInputs } from "./UserInput";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useFormik } from "formik";
 import { registrationSchema } from "../Schema/Schema";
@@ -37,49 +33,7 @@ const Register = () => {
         navigate("/login");
       },
     });
-  console.log(users);
-  // const [credentials, setCredentials] = useState({
-  //   userName: "",
-  //   password: "",
-  //   email: "",
-  //   phone: "",
-  //   country: "",
-  //   city: "",
-  // });
-  //   const { user, loading, error, dispatch } = useAuthContext();
-
-  // const navTo = useNavigate();
-
-  // const handleChange = (e) => {
-  //   setCredentials((pre) => ({ ...pre, [e.target.name]: e.target.value }));
-  // };
-  // const handleregister = async (e) => {
-  //   e.preventDefault();
-  //   let count = 0;
-  //   for (let key in credentials) {
-  //     if (credentials[key] === "" || credentials[key] === "") {
-  //       count = count + 1;
-  //     }
-  //   }
-
-  //   try {
-  //     if (count === 0) {
-  //       const res = await axios.post("/api/auth/register", credentials, {
-  //         withCredentials: true,
-  //       });
-  //       const message = res.data;
-  //       navTo("/login", { state: { message } });
-  //     } else {
-  //       toast.error("Enter all Fields First", {
-  //         position: "top-right",
-  //         autoClose: 2000,
-  //       });
-  //     }
-  //   } catch (err) {
-  //     toast.error(err.response.data.message);
-  //     console.log(err);
-  //   }
-  // };
+ 
 
   return (
     <div className="register">
@@ -128,7 +82,7 @@ const Register = () => {
           <li></li>
         </ul>
       </div>
-      <ToastContainer />
+     
     </div>
   );
 };
